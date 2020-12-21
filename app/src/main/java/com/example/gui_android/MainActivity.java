@@ -370,6 +370,9 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
         tvBalance = findViewById(R.id.textBalance);
         tvName.setVisibility(View.GONE);
         tvBalance.setVisibility(View.GONE);
+        linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
+        linearLayout.setVisibility(View.GONE);
+
     }
 
     // показать имя и баланс
@@ -384,6 +387,9 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
 
         tvName.setVisibility(View.VISIBLE);
         tvBalance.setVisibility(View.VISIBLE);
+
+        linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
+        linearLayout.setVisibility(View.VISIBLE);
     }
 
 
