@@ -370,6 +370,8 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
         tvBalance = findViewById(R.id.textBalance);
         tvName.setVisibility(View.GONE);
         tvBalance.setVisibility(View.GONE);
+
+        // делаем видимыми поля заказов
         linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
         linearLayout.setVisibility(View.GONE);
 
@@ -388,6 +390,7 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
         tvName.setVisibility(View.VISIBLE);
         tvBalance.setVisibility(View.VISIBLE);
 
+        // делаем видимыми поля заказов
         linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
         linearLayout.setVisibility(View.VISIBLE);
     }
