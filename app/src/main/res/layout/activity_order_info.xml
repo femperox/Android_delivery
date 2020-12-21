@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order_info">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:theme="@style/Theme.GUI_Android.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarInfo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.GUI_Android.PopupOverlay"
+                app:title="Заказ" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Дата:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextDate"
+                        android:layout_width="267dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F4F4F4"
+                        android:editable="false"
+                        android:ems="10"
+                        android:inputType="date"
+                        android:text="00.00.0000"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="id заявки:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvID"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="id0"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Груз:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCargo"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="груз"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Откуда:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAdressFrom"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Адрес откуда"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Куда:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAdressTo"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Адрес куда"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Кол-во рабочих:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAmountWorkers"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Оператор:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvOperator"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="ФИО"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Комментарий:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCommentary"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Комментарий"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Заказчик:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCustomer"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="ФИО"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Телефон:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTelephone"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="000-000-000"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="Стоймость:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:background="#F4F4F4"
+                        android:gravity="center_vertical"
+                        android:text="0 руб"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Button" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
