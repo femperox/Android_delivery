@@ -279,6 +279,8 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        btn = (Button) findViewById(R.id.button_new);
+
         if (requestCode == 1)
         {   if (resultCode == RESULT_OK)
             { int idOrder = data.getIntExtra("Номер заказа",0);
@@ -318,7 +320,7 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
                 }
 
                 // новые заказы принимать не можем!
-                btn.setVisibility(View.GONE);
+                btn.setEnabled(false);
 
               }
               else if (newColor == doneOrder)
@@ -331,7 +333,7 @@ public class MainActivity extends AppCompatActivity implements DialogClass.Dialo
                 tvBalance.setText("Баланс за всё время: "+balance+"р.");
 
                 // новые заказы принимать можем!
-                btn.setVisibility(View.VISIBLE);
+                  btn.setEnabled(true);
               }
 
               NavigationView navigationView = findViewById(R.id.nav_view);
